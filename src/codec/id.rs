@@ -1347,6 +1347,8 @@ impl From<AVCodecID> for Id {
             AV_CODEC_ID_LC3 => Id::LC3,
             #[cfg(feature = "ffmpeg_7_1")]
             AV_CODEC_ID_LCEVC => Id::LCEVC,
+
+            _ => panic!(),
         }
     }
 }
